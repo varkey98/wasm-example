@@ -46,6 +46,7 @@ func main() {
 
 			// initialise a new context so that they are not shared by different go routines
 			ctx = context.Background()
+
 			instance, err := r.InstantiateModule(ctx, compiledWasm, wazero.NewModuleConfig().WithName(""))
 			if err != nil {
 				log.Panicf("[%d] failed to instantiate %v", i, err)

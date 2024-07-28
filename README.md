@@ -1,3 +1,13 @@
+# Compiling wasm module
+```shell
+tinygo build -o process.wasm -target=wasi wasm.go   
+```
+# Environment Details
+```
+tinygo version 0.32.0 darwin/amd64 (using go version go1.22.4 and LLVM version 18.1.2)
+go version go1.22.4 darwin/amd64
+```
+# Output
 This code will run without any erros, but produces inconsistent output like:
 ```
 Processed Value: fcacbfcf-0522-4a24-8689-a051fd088ae7 processed
